@@ -1,0 +1,31 @@
+<html>
+<body>
+<form name="loginform" class="loginform">
+   <div id="div1" class="div2">
+	<input type="text" value="" tabindex="1">
+	<input type="password" value="" tabindex="2">
+	<input type="submit" value="Sign in" title="Sign in" tabindex="4">
+  </div>
+</form>
+</body>
+</html>
+
+/* Absolute Css Selector
+
+html>body>form>div>input
+
+Relative
+
+1. tagname#id                   : div#div1 > input
+2. tagname.class		: div.div2 > input
+3. tagname[attribute='value']   : form[name='loginform'] > div > input - 1st input 
+
+Use of Index - Password Textbox
+div#div1 > input:nth-child(2)
+div.div2 > input:nth-child(2)
+form[name='loginform'] > div > input:nth-child(2) - 2nd input
+
+Partial Locators
+name36e383d6  (starts with)  input[name^='name']
+4557687name   (ends with)    input[name$='name']
+745bname758   (contains)     input[name*='name']-  */

@@ -1,0 +1,29 @@
+<html>
+<body>
+<form name="loginform" class="loginform">
+   <div id="div1" class="div2">
+	<input type="text" value="" tabindex="1">
+	<input type="password" value="" tabindex="2">
+	<input type="submit" value="Sign in" title="Sign in" tabindex="4">
+  </div>
+</form>
+</body>
+</html>
+
+Absolute xpath
+html\body\form\div\input
+
+Relative
+//tagname[@attri='value']    : //div[@id='div1']/input
+                             : //form[@name='loginform']/div/input
+
+Use of index 
+//div[@id='div1']/input[2]
+//form[@name='loginform']/div/input[2]
+
+text() method- //tagname[text()='value']
+
+//div[@id='content']/ul/li[1]/a/h3 - 1st product on the page
+
+//h3[text()='Android Quick Start Guide'] - specific product on the page
+
