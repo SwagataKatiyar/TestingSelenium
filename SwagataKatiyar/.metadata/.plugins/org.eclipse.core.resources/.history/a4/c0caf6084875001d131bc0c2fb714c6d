@@ -1,0 +1,19 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MyThread1 extends Thread {
+	Scanner sc= new Scanner(System.in);
+	
+	public void run()
+	{
+		Queue<Shapes> q= new LinkedList<Shapes>();
+		int no;
+		do {
+			System.out.println("Choose from the list:");
+			System.out.println("1.Calculate area of Rectangle");
+			System.out.println("1.Calculate area of Square");
+			no=sc
+		}
+	}
+}

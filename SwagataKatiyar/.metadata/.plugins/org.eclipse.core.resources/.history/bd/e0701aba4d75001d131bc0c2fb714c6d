@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MyThread2 extends Thread {
+	Scanner sc = new Scanner(System.in);
+    String shape;
+    
+    Queue<Shapes> q= new LinkedList<Shapes>();
+    
+	public void run() {
+		if(q.poll()) {
+			
+		}
+	}
+}

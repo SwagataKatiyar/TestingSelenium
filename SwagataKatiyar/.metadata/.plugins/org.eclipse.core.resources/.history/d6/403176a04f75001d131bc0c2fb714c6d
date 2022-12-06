@@ -1,0 +1,25 @@
+public class Square {
+
+	private int side1;
+
+	public Square(int side1) {
+		this.side1 = side1;
+	}
+
+	public int getSide1() {
+		return side1;
+	}
+
+	public void setSide1(int side1) {
+		this.side1 = side1;
+	}
+
+	public int calcArea() {
+		return 2* (this.getSide1() * this.getSide1());
+	}
+
+	public int calcPerimeter() {
+		return this.getSide1() *4;
+	}
+
+}

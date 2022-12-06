@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MyThread1 extends Thread {
+	Scanner sc = new Scanner(System.in);
+	String shape;
+	int no;
+
+	public void run() {
+
+		do {
+			System.out.println("Choose your shape:");
+			System.out.println("1.For shape Square");
+			System.out.println("2.For shape Rectangle");
+			
+			switch(no) {
+			case 1:
+				System.out.println("Enter the value:");
+				int m1= sc.nextInt();
+				Square s= new Square(m1);
+			case 2: 
+				System.out.println("Enter the values:");
+				int n1= sc.nextInt();
+				int n2= sc.nextInt();
+				Rectangle r= new Rectangle(n1,n2);
+			}
+		} while (no == 1 || no == 2);
+	}
+}

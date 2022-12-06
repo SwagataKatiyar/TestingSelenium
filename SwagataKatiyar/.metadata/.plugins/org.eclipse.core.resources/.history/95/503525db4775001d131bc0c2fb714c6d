@@ -1,0 +1,11 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MyThread1 extends Thread {
+
+	public void run()
+	{
+		Queue<Shapes> q= new LinkedList<Shapes>();
+		
+	}
+}

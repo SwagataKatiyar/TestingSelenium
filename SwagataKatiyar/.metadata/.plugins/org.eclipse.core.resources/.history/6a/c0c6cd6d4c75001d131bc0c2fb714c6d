@@ -1,0 +1,74 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class myThread1 extends Thread {
+	Scanner sc = new Scanner(System.in);
+	Queue<Shapes> q = new LinkedList<Shapes>();
+	public void getShapes(Queue<String> q) {
+		   
+	}
+
+	public void run() {
+
+		int no;
+		do {
+			System.out.println("Choose from the list:");
+			System.out.println("1.Calculate for Square");
+			System.out.println("2.Calculate for Rectangle");
+			no = sc.nextInt();
+			switch (no) {
+			case 1:
+				System.out.println("Enter the number");
+				int n1= sc.nextInt();
+				Shapes s1= new Square(n1);
+				q.add(s1);
+				break;
+			case 2:
+				System.out.println("Enter the numbers");
+				int m1= sc.nextInt();
+				int m2= sc.nextInt();
+				Shapes s2= new Rectangle(m1,m2);
+				q.add(s2);
+			}
+		} while (no == 1 || no == 2);
+		System.out.println("Choose correctly from the list.");
+
+	}
+}
+
+
+ class myThread2 extends Thread {
+	Scanner sc = new Scanner(System.in);
+	Queue<Shapes> q = new LinkedList<Shapes>();
+	public void getShapes(Queue<String> q) {
+		   
+	}
+
+	public void run() {
+
+		int no;
+		do {
+			System.out.println("Choose from the list:");
+			System.out.println("1.Calculate for Square");
+			System.out.println("2.Calculate for Rectangle");
+			no = sc.nextInt();
+			switch (no) {
+			case 1:
+				System.out.println("Enter the number");
+				int n1= sc.nextInt();
+				Shapes s1= new Square(n1);
+				q.add(s1);
+				break;
+			case 2:
+				System.out.println("Enter the numbers");
+				int m1= sc.nextInt();
+				int m2= sc.nextInt();
+				Shapes s2= new Rectangle(m1,m2);
+				q.add(s2);
+			}
+		} while (no == 1 || no == 2);
+		System.out.println("Choose correctly from the list.");
+
+	}
+}

@@ -1,0 +1,9 @@
+public class MainThread {
+	public static void main(String[] args) {
+
+		MyThread2 ob = new MyThread2();
+		Thread t2 = new Thread(ob);
+		t2.start();
+
+	}
+}

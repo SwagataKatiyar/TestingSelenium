@@ -1,0 +1,12 @@
+public class MainThread {
+	public static void main(String[] args) {
+
+		Thread t = new MyThread1();
+		t.start();
+
+		Thread t2 = new Thread();
+		t2.start();
+
+		
+	}
+}

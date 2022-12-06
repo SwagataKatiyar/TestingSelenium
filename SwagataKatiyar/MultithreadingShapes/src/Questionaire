@@ -1,0 +1,8 @@
+Multithreading – make use of wait and notify/notifyall ->
+1st thread will get Shape from user in do-while loop and add that shape into the Queue
+
+2nd thread will retrieve that Shape from Queue and compute area and perimeter
+
+And display it on screen
+
+(Note: make use of abstract class Shape,Circle,Triangle)

@@ -1,0 +1,32 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MyThread2 implements Runnable {
+	Scanner sc = new Scanner(System.in);
+	Queue<Shapes> q;
+	ValueCarrier vc= new ValueCarrier(q);
+
+	MyThread2(Queue<Shapes> q) {
+		this.q = q;
+	}
+	
+	@Override
+	public void run() {
+
+		Shapes Obj = q.poll();
+
+		if (Obj instanceof Rectangle) {
+			System.out.println(Obj.calcPerimeter());
+			System.out.println(Obj.calcArea());
+			vc.getQ();
+			synchronized(q){	
+			notify();
+			}
+		} else if (Obj instanceof Square) {
+			System.out.println(Obj.calcPerimeter());
+			System.out.println(Obj.calcArea());
+			q.notify();
+		}
+	}
+}

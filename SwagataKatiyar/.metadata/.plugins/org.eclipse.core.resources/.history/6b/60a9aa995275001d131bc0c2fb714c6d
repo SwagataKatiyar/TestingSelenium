@@ -1,0 +1,9 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class ValueCarrier {
+
+	Queue<Shapes> q = new LinkedList<Shapes>();
+	
+}
+

@@ -1,0 +1,40 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MyThread1 implements Runnable {
+	Queue<Shapes> q = new LinkedList<Shapes>();
+
+	MyThread1(Queue<Shapes> q) {
+	this.q = q;
+	}
+
+	Scanner sc = new Scanner(System.in);
+	String shape;
+	int no;
+
+	public void run() {
+
+		do {
+			System.out.println("Choose your shape:");
+			System.out.println("1.For shape Square");
+			System.out.println("2.For shape Rectangle");
+			no = sc.nextInt();
+			switch (no) {
+			case 1:
+				System.out.println("Enter the value:");
+				int m1 = sc.nextInt();
+				Shapes s = new Square(m1);
+				q.add(s);
+			case 2:
+				System.out.println("Enter the values:");
+				int n1 = sc.nextInt();
+				int n2 = sc.nextInt();
+				Shapes r = new Rectangle(n1, n2);
+				q.add(r);
+			}
+
+		} while (no == 1 || no == 2);
+		System.out.println("Wrong Choice");
+	}
+}

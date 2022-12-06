@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class MyThread2 extends Thread {
+	Scanner sc = new Scanner(System.in);
+    String shape;
+    
+	public void run() {
+		if(shape=="Rectangle") {
+			
+		}
+	}
+}

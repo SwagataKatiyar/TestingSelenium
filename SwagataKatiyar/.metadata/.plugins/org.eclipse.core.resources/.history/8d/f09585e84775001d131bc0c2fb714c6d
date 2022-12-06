@@ -1,0 +1,14 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MyThread1 extends Thread {
+
+	public void run()
+	{
+		Queue<Shapes> q= new LinkedList<Shapes>();
+		do {
+			System.out.println("1.Calculate area of Rectangle");
+			System.out.println("1.Calculate area of Square");
+		}
+	}
+}

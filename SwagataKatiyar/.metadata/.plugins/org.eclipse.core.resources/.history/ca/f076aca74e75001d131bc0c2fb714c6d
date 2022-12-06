@@ -1,0 +1,43 @@
+public abstract class Shapes2 {
+	private int side1,side2;
+	
+	public Shapes2()
+	{
+		
+	}
+	
+	public Shapes2(int side)
+	{
+		this.side1=this.side2;
+	}
+	
+	
+	public Shapes2(int side1,int side2)
+	{
+		this.side1=side1;
+		this.side2=side2;
+	}
+	
+	
+
+	public int getSide1() {
+		return side1;
+	}
+
+	public void setSide1(int side1) {
+		this.side1 = side1;
+	}
+
+	public int getSide2() {
+		return side2;
+	}
+
+	public void setSide2(int side2) {
+		this.side2 = side2;
+	}
+
+	public abstract  int calcArea();
+	
+	
+	public abstract int calcPerimeter();
+}
